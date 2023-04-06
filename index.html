@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job Finding Website Design Using HTML & CSS</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Talento.</a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Post a job</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Feautres</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About us</a>
+                </li>
+            </ul>
+            <div class="signin_signup">
+                <div class="join">
+                    <a href="#" class="sign_in">Sign In</a>
+                    <a href="#" class="sign_up">Sign Up</a>
+                </div>
+                <div id="menu_icon" class="fa-solid fa-bars"></div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="banner_text">
+                <p>Any industry, Any location, Any experience <i class="fa-solid fa-medal"></i></p>
+                <h2>Your dream job is waiting <span>here</span></h2>
+                <p>Let your talents, personality and potential do the talking. We give you the opportunity to share your story through</p>
+                <div class="search_box">
+                    <i class="fa-brands fa-searchengin"></i> <input type="search" placeholder="Search your job">
+                    <button class="btn">Get Started</button>
+                </div>
+                <div class="candidate">
+                    <div class="box box-1">
+                        <img src="images/1.png" alt="">
+                    </div>
+                    <div class="box box-2">
+                        <img src="images/2.png" alt="">
+                    </div>
+                    <div class="box box-3">
+                        <img src="images/3.png" alt="">
+                    </div>
+                    <div class="box box-4">
+                        <img src="images/4.png" alt="">
+                    </div>
+                    <div class="box box-5">
+                        <p>80+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner_img">
+                <img src="images/banner.png" alt="">
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories">
+            <div class="categorie_text">
+                <h4>High demand categories featured</h4>
+            </div>
+            <div class="categorie">
+                <div class="categorie_box">
+                    <p class="fa-solid fa-cube"></p>
+                    <p>UI/UX Design</p>
+                </div>
+                <div class="categorie_box">
+                    <p class="fa-solid fa-code"></p>
+                    <p>Programming</p>
+                </div>
+                <div class="categorie_box">
+                    <p class="fa-solid fa-chart-line"></p>
+                    <p>Marketing</p>
+                </div>
+                <div class="categorie_box">
+                    <p class="fa-solid fa-camera"></p>
+                    <p>Photography</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="https://kit.fontawesome.com/813a59d263.js" crossorigin="anonymous"></script>
+
+    <script>
+        let menu = document.getElementById('menu_icon');
+        let navList = document.querySelector('.nav-list');
+
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-x');
+            navList.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>
